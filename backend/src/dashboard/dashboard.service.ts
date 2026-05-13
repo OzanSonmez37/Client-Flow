@@ -9,7 +9,7 @@ export class DashboardService {
   constructor(
     @InjectRepository(Project) private projectRepo: Repository<Project>,
     @InjectRepository(Client) private clientRepo: Repository<Client>,
-  ) {}
+  ) { }
 
   async getStats() {
     const totalClients = await this.clientRepo.count();
@@ -50,7 +50,12 @@ export class DashboardService {
   }
 
   async getTimeline() {
-    const months = [];
+    const months: {
+      month: string;
+      label: string;
+      budget: number;
+      projects: number;
+    }[] = [];
     const now = new Date();
 
     for (let i = 11; i >= 0; i--) {
