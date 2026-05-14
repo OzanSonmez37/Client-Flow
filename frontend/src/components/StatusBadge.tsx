@@ -6,8 +6,14 @@ export default function StatusBadge({ status }: { status: ProjectStatus }) {
   return (
     <span className={classNames('badge', cfg.bg, cfg.color)}>
       <span
-        className="inline-block w-1.5 h-1.5 rounded-full flex-shrink-0"
-        style={{ backgroundColor: cfg.dot }}
+        style={{
+          display: 'inline-block',
+          width: '6px',
+          height: '6px',
+          borderRadius: '50%',
+          backgroundColor: cfg.dot,
+          flexShrink: 0,
+        }}
       />
       {cfg.label}
     </span>
