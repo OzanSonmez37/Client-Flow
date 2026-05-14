@@ -109,8 +109,8 @@ docker compose up -d
 docker exec client_pm_backend node seed.js
 ```
 
-- Frontend: http://localhost:3000
-- Backend: http://localhost:4000/api
+- Frontend: http://localhost:3001
+- Backend: http://localhost:4001/api
 
 ### Manuel
 
