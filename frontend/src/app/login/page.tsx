@@ -28,10 +28,8 @@ export default function LoginPage() {
 
   const onSubmit = async (data: FormData) => {
     try {
-      setError('');
       const res = await authApi.login(data as { email: string; password: string });
       setAuth(res.data.user, res.data.access_token);
-      // Set cookie for middleware
       document.cookie = 'auth_present=true;path=/;max-age=604800';
       router.push('/dashboard');
     } catch (err: any) {
