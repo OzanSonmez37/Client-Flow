@@ -11,7 +11,7 @@ Yazılım şirketleri için müşteri ve proje yönetim paneli.
 
 | Dashboard | Müşteriler | Projeler |
 |-----------|-----------|---------|
-| <img width="2940" height="1622" alt="Image" src="https://github.com/user-attachments/assets/e3bbca33-1fd6-46cb-8405-2037eac30a18" /> | Kart listesi | Tablo görünümü |
+| <img width="2940" height="1622" alt="Image" src="https://github.com/user-attachments/assets/e3bbca33-1fd6-46cb-8405-2037eac30a18" /> | <img width="2940" height="1622" alt="Image" src="https://github.com/user-attachments/assets/1b9c0158-2fb9-49c9-b025-85d28a908750" /> | <img width="2940" height="1622" alt="Image" src="https://github.com/user-attachments/assets/2faa1d59-ce74-4c33-a045-b453af6f4ffb" /> |
 
 ---
 
