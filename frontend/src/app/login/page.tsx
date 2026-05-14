@@ -35,7 +35,12 @@ export default function LoginPage() {
       document.cookie = 'auth_present=true;path=/;max-age=604800';
       router.push('/dashboard');
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Giriş başarısız');
+      const msg = err?.response?.data?.message;
+      if (Array.isArray(msg)) {
+        setError(msg[0]);
+      } else {
+        setError(msg || 'Giriş başarısız. E-posta veya şifre hatalı.');
+      }
     }
   };
 
