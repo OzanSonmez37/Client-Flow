@@ -37,6 +37,6 @@ async function bootstrap() {
   await runSeed(dataSource);
   
   await app.listen(process.env.PORT || 4000, '0.0.0.0');
-  console.log('Backend running on http://localhost:4000/api');
+  console.log(`Backend running on port ${process.env.PORT || 4000}`);
 }
 bootstrap();
