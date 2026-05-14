@@ -127,6 +127,26 @@ npm install
 npm run dev
 ```
 
+### Ortam Değişkenleri
+
+**Backend** (`backend/.env`):
+```env
+NODE_ENV=development
+PORT=4001
+DB_HOST=localhost
+DB_PORT=5433
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_NAME=clientflow2
+JWT_SECRET=clientflow2-secret-key
+FRONTEND_URL=http://localhost:3001
+```
+
+**Frontend** (`frontend/.env.local`):
+```env
+NEXT_PUBLIC_API_URL=http://localhost:4001/api
+```
+
 ---
 
 ## 📁 Proje Yapısı
